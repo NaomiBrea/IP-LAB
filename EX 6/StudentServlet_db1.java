@@ -6,7 +6,7 @@ import java.sql.*;
 import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.SQLException;
-public class p12_db1 extends HttpServlet{
+public class StudentServlet_db1 extends HttpServlet{
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         Connection conn=null;
