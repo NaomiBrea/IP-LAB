@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Bank Registration</title>
+
+    <script>
+        function validate()
+        {
+            var email = document.bank.email.value;
+            var phone = document.bank.mobile.value;
+            var name = document.bank.name.value;
+            var pan = document.bank.pan.value;
+            var rname = document.bank.rname.value;
+            var add = document.bank.address.value;
+            var age = document.bank.age.value;
+            var dob = document.bank.dob.value;
+            var pin = document.bank.pin.value;
+            var check=1;
+
+            var nm = new RegExp('^[a-zA-Z\\s]+$');
+            var em= new RegExp('^[a-zA-Z0-9]+@gmail.com$');
+            var pn=new RegExp('^[A-Z]{5}[0-9]{4}[A-Z]{1}$');
+            var pi=new RegExp('^[0-9]{6}$');
+            var ph=new RegExp('^[0-9]{10}$');
+
+            if(check==1)
+            {
+                if(name=="" || rname=="" || phone=="" || add=="" || age=="" || dob=="")
+                {
+                    alert("(*) fields are mandatory");
+                    check = 0;
+                }
+                else
+                {
+                    if(!nm.test(name))
+                    {
+                        alert("Please enter a valid name");
+                        document.getElementById("name").value="";
+                        check=0;
+                    }
+                    if(!ph.test(phone))
+                    {
+                        alert("Please enter a valid mobile number");
+                        document.getElementById("mobile").value="";
+                        check=0;
+                    }
+                    if(email!="")
+                    {
+                        if(!em.test(email)) 
+                        {
+                            alert("Invalid email address");
+                            document.getElementById("email").value="";
+                            check=0;
+                        }
+                    }
+                    
+
+                    if(!pi.test(pin))
+                    {
+                        alert("Invalid PIN code");
+                        check=0;
+                    }
+                    if(pan!="")
+                    {
+                        if(!pn.test(pan))
+                        {
+                            alert("Invalid PAN Number");
+                            document.getElementById("pan").value="";
+                            check=0
+                        }
+                    }
+                    if(c
+                    heck==1)
+                    {
+                        document.getElementById("suc").value="Registration Successful";
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 class="title">
+        Bank Account Registration Form 
+    </h2>
+    <div id="frm">
+        <span class="br">
+            <h1></h1>
+            <form name="bank" onsubmit="return false">
+            <label>Full name * : </label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label>Father/Mother/Husband Name * : </label>
+            <input type="text" name="rname"><br><br>
+
+            <label>Age * : </label>
+            <input type="text" name="age"><br><br>
+
+            <label>Date of Birth * : </label>
+            <input type="date" name="dob"><br><br>
+
+            <label>Gender : </label>
+            <input type="radio" name="gender" value="male">
+            <label for="male" class="op">Male</label>
+            <input type="radio" name="gender" value="Female">
+            <label for="Female"class="op">Female</label>
+            <input type="radio" name="gender">
+            <label for="Others"class="op">Prefer not to say</label><br><br>
+
+            <label>Marital Status : </label>
+            <input type="radio" name="ms">
+            <label for="ma"class="op">Married</label>
+            <input type="radio" name="ms">
+            <label for="uma"class="op">Unmarried</label>
+            <input type="radio" name="ms">
+            <label for="Others"class="op">Others</label><br><br>
+
+            <label>Permanent Address * : </label>
+            <textarea name="address"></textarea><br><br>
+            <label>Pin Code : </label>
+            <input type="text" name="pin"><br><br>
+    
+            <label>Mobile Number * : </label>
+            <input type="text" name="mobile"><br><br>
+
+            <label>PAN : </label>
+            <input type="text" name="pan"><br><br>
+
+            <label>Email : </label>
+            <input type="email" name="email"><br><br>
+
+
+            <input type="submit" Value="Register" onclick="validate()">&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Reset">
+            <br><br><br>
+            <h4 id="suc">
+
+            </h4>
+
+            </form>
+        </span>
+    
+    </div>
+
+   
+</body>
+</html>
