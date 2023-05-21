@@ -1,0 +1,32 @@
+div{
+    width:30%;
+    height: 70%;
+    margin-left: 38%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 2px ridge black;
+    border-radius: 20px;
+}
+
+
+.title
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 50px;
+    color: blueviolet;
+}
+input{
+    margin-inline-start: 20px;
+}
+label{
+    font-weight: bolder;
+
+}
+.op{
+    font-weight: lighter;
+}
