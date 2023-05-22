@@ -1,0 +1,64 @@
+<userlist>
+    <userid>usr01</userid>
+    <username>Brea</username>
+    <address>trichy</address>
+    <phone>9000000078</phone>
+    <email>brea@gmail.com</email>
+
+    <userid>usr02</userid>
+    <username>Jennie</username>
+    <address>chennai</address>
+    <phone>9111111111</phone>
+    <email>jennie@gmail.com</email>
+
+    <userid>usr03</userid>
+    <username>adele</username>
+    <address>telugana</address>
+    <phone>9222222222</phone>
+    <email>adele@gmail.com</email>
+
+    <userid>usr04</userid>
+    <username>sana</username>
+    <address>bangalore</address>
+    <phone>9555555555</phone>
+    <email>sana@gmail.com</email>
+
+    <userid>usr05</userid>
+    <username>jean</username>
+    <address>Perambalur</address>
+    <phone>9666666666</phone>
+    <email>jean@gmail.com</email>
+
+    
+    <userid>usr06</userid>
+    <username>Rob</username>
+    <address>Chennai</address>
+    <phone>9846532158</phone>
+    <email>rob@gmail.com</email>
+
+    <userid>usr07</userid>
+    <username>Kyle</username>
+    <address>Salem</address>
+    <phone>9632542161</phone>
+    <email>kyle@gmail.com</email>
+
+    <userid>usr08</userid>
+    <username>Erik</username>
+    <address>Trichy</address>
+    <phone>8645976532</phone>
+    <email>erik@gmail.com</email>
+
+    <userid>usr09</userid>
+    <username>Shyona</username>
+    <address>Mumbai</address>
+    <phone>9500126532</phone>
+    <email>shyona@gmail.com</email>
+
+    <userid>usr10</userid>
+    <username>Shobika</username>
+    <address>Ooty</address>
+    <phone>9603040064</phone>
+    <email>shobika@gmail.com</email>
+
+
+</userlist>
